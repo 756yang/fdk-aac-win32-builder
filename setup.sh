@@ -7,16 +7,14 @@ if [ -z "$MINGW_CHOST" ]; then
 fi
 
 rm -rf artifacts
-rm -rf stage
-
 mkdir artifacts
-mkdir stage
-
 cd artifacts
 
 wget https://github.com/kekyo/fdk-aac-win32-builder/releases/download/distributes/fdk-aac-0.1.6.tar.gz
-wget https://github.com/kekyo/fdk-aac-win32-builder/releases/download/distributes/fdk-aac-2.0.2.tar.gz
+#wget https://github.com/kekyo/fdk-aac-win32-builder/releases/download/distributes/fdk-aac-2.0.2.tar.gz
+wget -O fdk-aac-2.0.3.tar.gz https://github.com/mstorsjo/fdk-aac/archive/refs/tags/v2.0.3.tar.gz
 #wget https://github.com/kekyo/fdk-aac-win32-builder/releases/download/distributes/fdkaac-1.0.2.tar.gz
-wget https://github.com/kekyo/fdk-aac-win32-builder/releases/download/distributes/fdkaac-1.0.3.tar.gz
+#wget https://github.com/kekyo/fdk-aac-win32-builder/releases/download/distributes/fdkaac-1.0.3.tar.gz
+wget -O fdkaac-1.0.6.tar.gz https://github.com/nu774/fdkaac/archive/refs/tags/v1.0.6.tar.gz
 
 cd ..
